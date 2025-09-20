@@ -30,10 +30,10 @@ const Contact = ({ data }) => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration
+      // EmailJS configuration with your actual keys
       const serviceID = 'service_q3ms1z9';
-      const templateID = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      const templateID = 'template_dklju8d';
+      const publicKey = 'KqMM_N4H26PaaeUBD';
 
       const templateParams = {
         from_name: formData.name,
@@ -43,27 +43,12 @@ const Contact = ({ data }) => {
         to_email: 'iapreddy2004@gmail.com'
       };
 
-      // For now, simulate successful submission since keys aren't configured yet
-      setTimeout(() => {
-        setIsSubmitting(false);
-        toast({
-          title: "Message Sent Successfully!",
-          description: "Thank you for reaching out. I'll get back to you within 24 hours.",
-        });
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: ""
-        });
-      }, 1000);
-
-      // Uncomment this when you have your EmailJS keys configured:
-      /*
+      // Send email using EmailJS
       await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      
       setIsSubmitting(false);
       toast({
-        title: "Message Sent Successfully!",
+        title: "Message Sent Successfully! ✉️",
         description: "Thank you for reaching out. I'll get back to you within 24 hours.",
       });
       setFormData({
@@ -72,13 +57,13 @@ const Contact = ({ data }) => {
         subject: "",
         message: ""
       });
-      */
 
     } catch (error) {
       setIsSubmitting(false);
+      console.error('EmailJS Error:', error);
       toast({
         title: "Error Sending Message",
-        description: "There was an issue sending your message. Please try again or email me directly.",
+        description: "There was an issue sending your message. Please try again or email me directly at iapreddy2004@gmail.com",
         variant: "destructive"
       });
     }
