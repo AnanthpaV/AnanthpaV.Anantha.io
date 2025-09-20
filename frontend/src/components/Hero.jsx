@@ -107,6 +107,9 @@ const Hero = ({ data }) => {
                   src={data.profileImage} 
                   alt="ANANTHA PRAKASH REDDY INUKOLLU"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face";
+                  }}
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#00C2A8] rounded-2xl flex items-center justify-center shadow-lg">
