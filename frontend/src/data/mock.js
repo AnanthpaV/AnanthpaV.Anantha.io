@@ -63,7 +63,7 @@ export const mockData = {
       description: "An immersive Extended Reality (XR) application that revolutionizes code learning through interactive 3D environments and spatial computing.",
       technologies: ["Unity", "C#", "XR SDK", "Mixed Reality"],
       github: "https://github.com/AnanthpaV/CodeXR",
-      image: "https://images.unsplash.com/photo-1592478411213-6153e4ebc696?w=600&h=400&fit=crop",
+      image: "https://raw.githubusercontent.com/AnanthpaV/profile-image/1b3edbbca98d2b7823d9aca701a174db787c7155/Screenshot%202025-09-20%20232405.png",
       features: [
         "3D code visualization in virtual space",
         "Interactive programming tutorials",
