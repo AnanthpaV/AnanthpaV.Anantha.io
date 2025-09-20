@@ -105,7 +105,7 @@ const Hero = ({ data }) => {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-[#F3F7F8]">
                 <img 
                   src={data.profileImage} 
-                  alt="Anantha Prakash Reddy"
+                  alt="ANANTHA PRAKASH REDDY INUKOLLU"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
