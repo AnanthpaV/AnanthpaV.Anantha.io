@@ -30,8 +30,8 @@ const Contact = ({ data }) => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration (you'll need to replace these with your actual keys)
-      const serviceID = 'YOUR_SERVICE_ID';
+      // EmailJS configuration
+      const serviceID = 'service_q3ms1z9';
       const templateID = 'YOUR_TEMPLATE_ID';
       const publicKey = 'YOUR_PUBLIC_KEY';
 
