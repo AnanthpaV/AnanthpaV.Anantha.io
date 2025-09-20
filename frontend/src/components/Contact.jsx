@@ -145,11 +145,11 @@ const Contact = ({ data }) => {
               <h4 className="text-lg font-semibold mb-4">Response Time</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold">< 24h</div>
+                  <div className="text-2xl font-bold">&lt; 24h</div>
                   <div className="text-sm opacity-90">Email Response</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold">< 2h</div>
+                  <div className="text-2xl font-bold">&lt; 2h</div>
                   <div className="text-sm opacity-90">LinkedIn Message</div>
                 </div>
               </div>
