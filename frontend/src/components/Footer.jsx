@@ -95,7 +95,7 @@ const Footer = ({ data }) => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2 text-gray-300">
-            <span>© {currentYear} Anantha Prakash Reddy. Made with</span>
+            <span>© {currentYear} ANANTHA PRAKASH REDDY INUKOLLU. Made with</span>
             <Heart size={16} className="text-red-500 fill-current" />
             <span>and lots of coffee</span>
           </div>
