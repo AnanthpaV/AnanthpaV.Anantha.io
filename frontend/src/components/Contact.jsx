@@ -29,12 +29,42 @@ const Contact = ({ data }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // EmailJS configuration (you'll need to replace these with your actual keys)
+      const serviceID = 'YOUR_SERVICE_ID';
+      const templateID = 'YOUR_TEMPLATE_ID';
+      const publicKey = 'YOUR_PUBLIC_KEY';
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'iapreddy2004@gmail.com'
+      };
+
+      // For now, simulate successful submission since keys aren't configured yet
+      setTimeout(() => {
+        setIsSubmitting(false);
+        toast({
+          title: "Message Sent Successfully!",
+          description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
+      }, 1000);
+
+      // Uncomment this when you have your EmailJS keys configured:
+      /*
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
       setIsSubmitting(false);
       toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: "Message Sent Successfully!",
+        description: "Thank you for reaching out. I'll get back to you within 24 hours.",
       });
       setFormData({
         name: "",
@@ -42,7 +72,16 @@ const Contact = ({ data }) => {
         subject: "",
         message: ""
       });
-    }, 1000);
+      */
+
+    } catch (error) {
+      setIsSubmitting(false);
+      toast({
+        title: "Error Sending Message",
+        description: "There was an issue sending your message. Please try again or email me directly.",
+        variant: "destructive"
+      });
+    }
   };
 
   return (
