@@ -6,7 +6,7 @@ export const mockData = {
     location: "Prakasam, Andhra Pradesh, India",
     education: "B.Tech IT — Expected 2026",
     email: "iapreddy2004@gmail.com",
-    profileImage: "/anantha-photo.jpg",
+    profileImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
     social: {
       linkedin: "https://www.linkedin.com/in/anantha-prakash-reddy",
       github: "https://github.com/AnanthpaV",
